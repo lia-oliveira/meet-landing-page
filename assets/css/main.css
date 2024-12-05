@@ -1,2 +1,52 @@
 @charset "UTF-8";
 
+:root {
+    /*Colors*/
+    --co-cyan-300: hsl(192, 90%, 77%);
+    --co-cyan-600: hsl(192, 37%, 48%);
+    --co-purple-300: hsl(268, 100%, 86%);
+    --co-purple-600: hsl(268, 34%, 53%);    
+    --co-slate-300: hsl(240, 18%, 85%);
+    --co-slate-600: hsl(240, 10%, 57%);
+    --co-slate-900: hsl(240, 21%, 20%);   
+    --co-white: hsl(0, 0%, 98%);
+
+    /*Font*/
+    --ff-red-hot-display: "Red Hat Display", sans-serif;
+    --fw-medium-500: 500;
+    --fw-black-900: 900;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-40: 2.5rem;
+    --fs-64: 4rem;
+    --lh-110: 110;
+    --lh-150: 150;    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+header,
+main,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-medium-500);
+    font-style: normal;
+    font-size: var(--fs-16);
+    color: var(--co-slate-600);
+}
+
