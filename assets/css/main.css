@@ -29,6 +29,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+}
+
 body,
 h1,
 h2,
@@ -50,3 +54,24 @@ body {
     color: var(--co-slate-600);
 }
 
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80px;
+    margin: 0 2.25rem;        
+}
+
+.hero {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+}
+
+.hero img {
+    width: calc(100% + 50px);
+    margin: 0 -25px;
+    object-fit: contain;
+}
