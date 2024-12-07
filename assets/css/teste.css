@@ -94,3 +94,53 @@ p strong {
 }
 
 /* Images*/
+/* Images*/
+
+header > img {
+    width: 4.9375rem; /*79px*/
+    height: 1.4375rem; /*23px*/
+}
+
+.hero__img-container > img {
+    width: calc(100% + 3.125rem); /*50px*/
+    object-fit: contain;       
+}
+
+.main-img__container > img {
+    width: 9.21875rem; /*147.5px*/
+    width: 9rem; /*144*/
+}
+
+/*buttons*/
+btn-big {
+    width: 12.0625rem; /*193px*/
+    height: 3.5rem; /*56px*/
+}
+
+btn-small {
+    width: 10.0625rem; /*161px */
+    height: 3.5rem; /*56px*/
+}
+
+.btn-text {
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-black-900);
+    font-size: var(--fs-16);
+    color: var(--co-white);
+}
+
+.btn-bkg-cyan {
+    background-color: var(--co-cyan-600);
+}
+
+.btn-bkg-purple {
+    background-color: var(--co-purple-600);
+}
+
+/*numbers*/
+.number {
+    font-family: var(--ff-red-hot-display);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-black-900);
+    color: var(--co-slate-600);
+}
