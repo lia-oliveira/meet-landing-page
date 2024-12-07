@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 :root {
     /*Colors*/
     --co-cyan-300: hsl(192, 90%, 77%);
@@ -10,16 +11,18 @@
     --co-slate-600: hsl(240, 10%, 57%);
     --co-slate-900: hsl(240, 21%, 20%);   
     --co-white: hsl(0, 0%, 98%);
+    
 
     /*Font*/
     --ff-red-hot-display: "Red Hat Display", sans-serif;
     --fw-medium-500: 500;
     --fw-black-900: 900;
+    --fs-12: 0.75rem;
     --fs-16: 1rem;
     --fs-18: 1.125rem;
+    --fs-32: 2rem;
     --fs-40: 2.5rem;
-    --fs-64: 4rem;
-   
+    --fs-64: 4rem;   
 }
 
 *,
@@ -39,11 +42,12 @@ h3,
 p,
 header,
 main,
-section {
+section,
+footer {
     margin: 0;
     padding: 0;
+    overflow-wrap: break-word;    
 }
-
 
 body {
     font-family: var(--ff-red-hot-display);
@@ -51,41 +55,42 @@ body {
     font-style: normal;
     font-size: var(--fs-16);
     color: var(--co-slate-600);
+    background-color: var(--co-white);
+    line-height: 110%;
 }
 
-header {
-    height: 80px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;    
-    margin: 0 2.25rem 65px 2.25rem;        
-}
-
-.hero {
-    width: 100%;
-}
-
-.img-wrapper{
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow:hidden;
-}
-
-.img-wrapper img {
-    width: calc(100% + 50px);
-    margin: 0 -25px;
-    object-fit: contain;
-}
+/* font */
 
 h1 {
-    margin-top: 43px;
     font-family: var(--ff-red-hot-display);
     font-weight: var(--fw-black-900);
-    font-size: 40px;
-    text-align: center;
+    font-size: var(--fs-40);
+    color: var(--co-slate-900);
+    line-height: 110%;    
+}
+
+h2 {
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-black-900);
+    font-size: var(--fs-32);
     color: var(--co-slate-900);
     line-height: 110%;
-
 }
+
+p {
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-medium-500);
+    font-size: var(--fs-16);
+    line-height: 150%;
+    color: var(--co-slate-600);
+}
+
+p strong {
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-black-900);
+    font-size: var(--fs-12);
+    color: var(--co-cyan-600);
+    text-transform: uppercase;
+}
+
+/* Images*/

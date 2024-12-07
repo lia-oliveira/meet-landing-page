@@ -228,7 +228,7 @@ main p:nth-of-type(3) {
 
 footer {
     width: 100%;
-    height: 372px;
+    height: 23.25rem; /*372px*/
     padding-bottom: 4.0625rem;
     display: flex;
     flex-direction: column;
