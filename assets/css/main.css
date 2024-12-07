@@ -10,6 +10,7 @@
     --co-slate-600: hsl(240, 10%, 57%);
     --co-slate-900: hsl(240, 21%, 20%);   
     --co-white: hsl(0, 0%, 98%);
+    
 
     /*Font*/
     --ff-red-hot-display: "Red Hat Display", sans-serif;
@@ -20,8 +21,7 @@
     --fs-18: 1.125rem;
     --fs-32: 2rem;
     --fs-40: 2.5rem;
-    --fs-64: 4rem;
-   
+    --fs-64: 4rem;   
 }
 
 *,
@@ -53,6 +53,27 @@ body {
     font-style: normal;
     font-size: var(--fs-16);
     color: var(--co-slate-600);
+    background-color: var(--co-white);
+}
+
+h1 {
+    width: 10ch;
+    word-break: break-word;
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-black-900);
+    font-size: var(--fs-40);
+    text-align: center;
+    color: var(--co-slate-900);
+    line-height: 110%;
+    margin-bottom: 1.875rem; /*30px*/    
+}
+
+h2 {
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-black-900);
+    font-size: var(--fs-32);
+    font-style: normal;
+    line-height: 110%;
 }
 
 header {
@@ -82,18 +103,6 @@ header {
 .hero__img-container img {
     width: calc(100% + 3.125rem); /*50px*/
     object-fit: contain;
-}
-
-h1 {
-    width: 10ch;
-    word-break: break-word;
-    font-family: var(--ff-red-hot-display);
-    font-weight: var(--fw-black-900);
-    font-size: var(--fs-40);
-    text-align: center;
-    color: var(--co-slate-900);
-    line-height: 110%;
-    margin-bottom: 1.875rem; /*30px*/    
 }
 
 .hero > p {
@@ -149,7 +158,7 @@ main {
     align-items: center;   
 }
 
-main p:first-child {
+.number {
     width: 3.75rem; /*60px*/
     height: 3.75rem; /*60px*/
     border-radius: 50%;
@@ -158,10 +167,11 @@ main p:first-child {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 66px;
+    margin-bottom: 3.875rem; /*62px*/
+    font-weight: var(--fw-black-900);
 }
 
-main p::before{
+.number::before{
     content:"";
     position: absolute;
     left:50%;
@@ -175,7 +185,7 @@ main p::before{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;    
-    margin-bottom: 3.875rem; /*62px*/
+    margin-bottom: 3.75rem; /*60px*/
 }
 
 .main-images > img {
@@ -184,22 +194,21 @@ main p::before{
     border-radius: 0.5rem; /*8px*/ 
 }
 
-main p:nth-of-type(2) {
+main p:nth-of-type(2){
+    margin-bottom: 0.75rem; /*23px*/
+}
+
+main p strong {
     text-transform: uppercase;
     font-family: var(--ff-red-hot-display);
     font-weight: var(--fw-black-900);
     font-size: var(--fs-12);
     line-height: 110%;
     letter-spacing: 0.25rem; /*4px*/
-    color: var(--co-cyan-600);
-    margin-bottom: 1.5625rem; /*25px*/
+    color: var(--co-cyan-600);    
 }
 
 main > h2 {
-    font-family: var(--ff-red-hot-display);
-    font-weight: var(--fw-black-900);
-    font-size: var(--fs-32);
-    font-style: normal;
     color:var(--co-slate-900);
     width: 14ch;
     text-align: center;
@@ -213,9 +222,86 @@ main p:nth-of-type(3) {
     font-style: normal;
     text-align: center;
     line-height: 150%;
-    width: 26ch;
-    margin-bottom: 11.0625rem; /*177px*/
+    width: 28ch;
+    margin-bottom: 10.625rem; /*170px*/
 }
+
+footer {
+    width: 100%;
+    height: 372px;
+    padding-bottom: 4.0625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;      
+}
+
+footer .number {
+    background-color: var(--co-white);
+    color: var(--co-slate-600);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1.875rem;
+    font-family: var(--co-slate-600);
+    font-weight: var(--fw-black-900);
+    
+}
+
+footer p, footer h2 {
+    color: var(--co-white);
+    text-align: center;    
+}
+
+footer h2 {
+    width: 15ch;
+    margin-top: 4.375rem; /*70px*/
+    margin-bottom: 1.5rem; /*24px*/
+}
+
+footer p {
+    width: 28ch;
+    margin-bottom: 1.75rem; /*28px*/
+}
+
+button {
+    width: 12.0625rem; /*193px*/
+    padding: 1.125rem 0; /*18px*/
+    height: 4rem;
+    border: none;
+    border-radius: 1.8125rem; /*29px*/
+    color: var(--co-white);
+    background-color: var(--co-purple-600);
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-black-900);
+    font-size: 0.8125rem; /*13px*/
+    line-height: 150%;
+    letter-spacing: 0.0625rem; /*1px*/
+    opacity: 0.8;
+}
+
+footer button .btn-version {
+    color: var(--co-purple-300);
+}
+
+.bkg-image {
+    background-image: url(../images/tablet/image-footer.jpg);
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;    
+}
+
+.bkg-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--co-cyan-600);
+    opacity: 0.8;
+    z-index: -1;    
+}
+
 
 
 
