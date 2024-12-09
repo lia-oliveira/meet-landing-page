@@ -41,267 +41,108 @@ h3,
 p,
 header,
 main,
-section {
+section,
+footer,
+button {
     margin: 0;
     padding: 0;
 }
 
-
 body {
     font-family: var(--ff-red-hot-display);
     font-weight: var(--fw-medium-500);
-    font-style: normal;
     font-size: var(--fs-16);
-    color: var(--co-slate-600);
     background-color: var(--co-white);
 }
 
+/*======= FONTS =========*/
 h1 {
-    width: 10ch;
-    word-break: break-word;
     font-family: var(--ff-red-hot-display);
     font-weight: var(--fw-black-900);
-    font-size: var(--fs-40);
-    text-align: center;
+    font-size: var(--fs-64);
+    line-height: 1.1;
     color: var(--co-slate-900);
-    line-height: 110%;
-    margin-bottom: 1.875rem; /*30px*/    
 }
 
 h2 {
     font-family: var(--ff-red-hot-display);
     font-weight: var(--fw-black-900);
-    font-size: var(--fs-32);
-    font-style: normal;
-    line-height: 110%;
+    font-size: var(--fs-40);
+    line-height: 1.1;
+    color: var(--co-slate-900);
 }
 
-header {
-    height: 5rem; /*80px*/
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 3.75rem; /*60px*/         
-}
-
-.hero {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-}
-
-.hero__img-container{
-    max-width: 100%;
-    margin-bottom: 2.9375rem; /*47px*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow:hidden;
-}
-
-.hero__img-container img {
-    width: calc(100% + 3.125rem); /*50px*/
-    object-fit: contain;
-}
-
-.hero > p {
-    width: 29ch;    
+p {
     font-family: var(--ff-red-hot-display);
-    font-size: var(--fs-16);
     font-weight: var(--fw-medium-500);
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 1.5rem; /*24px*/
-} 
-
-.btn-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.9375rem; /* 15px*/
-    align-items: center;
-    margin-bottom: 144px;
+    font-size: var(--fs-18);
+    line-height: 1.1;
+    color: var(--co-slate-600);
 }
 
-.btn-container button {
+p strong {
     font-family: var(--ff-red-hot-display);
     font-weight: var(--fw-black-900);
     font-size: var(--fs-16);
-    font-style: normal;
+    line-height: 1.1;
+    color: var(--co-cyan-600);
 }
 
-.btn-container button:nth-of-type(1) {
-    width: 12.0625rem; /*193px*/
-    height: 3.5rem; /*56px*/
-    border-radius: 1.8125rem; /*29px*/
+.text-preset-5 {
+    font-family: var(--ff-red-hot-display);
+    font-weight: var(--fw-black-900);
+    font-size: var(--fs-16);
+    line-height: 1.5;
+}
+
+/*======= BUTTONS =========*/
+
+.btn {
+    padding: 1rem 2.5rem;
     border: none;
-    background-color: var(--co-cyan-600);
-    color: var(--co-white);
+    border-radius: 1.8125rem; /*29px*/
 }
 
-.btn-container button:nth-of-type(2) {
+.btn-big {
+    width: 12.0625; /*193px*/
+    height: 3.5; /*56px*/    
+}
+
+.btn-small {
     width: 10.0625rem; /*161px*/
-    height: 3.5rem;  /*56px*/
-    border:none;
-    border-radius: 1.8125rem; /*29px*/
-    color: var(--co-white);
+    height: 3.5rem; /*56px */
+}
+
+.btn-bkg-cyan {
+    background-color: var(--co-cyan-600);
+}
+
+.btn-bkg-purple {
     background-color: var(--co-purple-600);
 }
 
-.btn-version {
+.btn-txt-cyan {
     color: var(--co-cyan-300);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-}
-
-.number {
-    width: 3.75rem; /*60px*/
-    height: 3.75rem; /*60px*/
-    border-radius: 50%;
-    border: 1px solid var(--co-slate-300);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 3.875rem; /*62px*/
-    font-weight: var(--fw-black-900);
-}
-
-.number::before{
-    content:"";
-    position: absolute;
-    left:50%;
-    top:-5rem; /*80px*/
-    height: 5rem; /*80px*/
-    border-left: 1px solid var(--co-slate-300);
-}
-
-.main-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;    
-    margin-bottom: 3.75rem; /*60px*/
-}
-
-.main-images > img {
-    width: 9.1875rem; /*147px*/
-    height: 9rem;  /*144px*/
-    border-radius: 0.5rem; /*8px*/ 
-}
-
-main p:nth-of-type(2){
-    margin-bottom: 0.75rem; /*23px*/
-}
-
-main p strong {
-    text-transform: uppercase;
-    font-family: var(--ff-red-hot-display);
-    font-weight: var(--fw-black-900);
-    font-size: var(--fs-12);
-    line-height: 110%;
-    letter-spacing: 0.25rem; /*4px*/
-    color: var(--co-cyan-600);    
-}
-
-main > h2 {
-    color:var(--co-slate-900);
-    width: 14ch;
-    text-align: center;
-    margin-bottom: 2.1875rem; /*35px*/
-}
-
-main p:nth-of-type(3) {
-    font-family: var(--ff-red-hot-display);
-    font-weight: var(--fw-medium-500);
-    font-size: var(--fs-16);
-    font-style: normal;
-    text-align: center;
-    line-height: 150%;
-    width: 28ch;
-    margin-bottom: 10.625rem; /*170px*/
-}
-
-footer {
-    width: 100%;
-    height: 23.25rem; /*372px*/
-    padding-bottom: 4.0625rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;      
-}
-
-footer .number {
-    background-color: var(--co-white);
-    color: var(--co-slate-600);
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -1.875rem;
-    font-family: var(--co-slate-600);
-    font-weight: var(--fw-black-900);
-    
-}
-
-footer p, footer h2 {
-    color: var(--co-white);
-    text-align: center;    
-}
-
-footer h2 {
-    width: 15ch;
-    margin-top: 4.375rem; /*70px*/
-    margin-bottom: 1.5rem; /*24px*/
-}
-
-footer p {
-    width: 28ch;
-    margin-bottom: 1.75rem; /*28px*/
-}
-
-button {
-    width: 12.0625rem; /*193px*/
-    padding: 1.125rem 0; /*18px*/
-    height: 4rem;
-    border: none;
-    border-radius: 1.8125rem; /*29px*/
-    color: var(--co-white);
-    background-color: var(--co-purple-600);
-    font-family: var(--ff-red-hot-display);
-    font-weight: var(--fw-black-900);
-    font-size: 0.8125rem; /*13px*/
-    line-height: 150%;
-    letter-spacing: 0.0625rem; /*1px*/
-    opacity: 0.8;
-}
-
-footer button .btn-version {
+.btn-txt-purple {
     color: var(--co-purple-300);
 }
 
-.bkg-image {
-    background-image: url(../images/tablet/image-footer.jpg);
-    background-position: center; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    isolation: isolate;    
+/*======= IMAGES =========*/
+
+
+
+/* Gerneral */
+header {
+    background-color: aquamarine;
+    height: 6.75rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.bkg-image::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: var(--co-cyan-600);
-    opacity: 0.8;
-    z-index: -1;    
+.hero {
+    display: flex;
+    justify-content: space-between;
 }
-
-
-
-
