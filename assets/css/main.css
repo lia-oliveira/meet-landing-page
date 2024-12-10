@@ -59,7 +59,7 @@ body {
 h1 {
     font-family: var(--ff-red-hot-display);
     font-weight: var(--fw-black-900);
-    font-size: var(--fs-64);
+    font-size: clamp(var(--fs-40), 10vw, var(--fs-64));
     line-height: 1.1;
     color: var(--co-slate-900);
 }
@@ -93,6 +93,7 @@ p strong {
     font-weight: var(--fw-black-900);
     font-size: var(--fs-16);
     line-height: 1.5;
+    color: var(--co-white)
 }
 
 /*======= BUTTONS =========*/
@@ -103,21 +104,21 @@ p strong {
     border-radius: 1.8125rem; /*29px*/
 }
 
-.btn-big {
+.btn--big{
     width: 12.0625; /*193px*/
     height: 3.5; /*56px*/    
 }
 
-.btn-small {
+.btn--small {
     width: 10.0625rem; /*161px*/
     height: 3.5rem; /*56px */
 }
 
-.btn-bkg-cyan {
+.btn--bkg-cyan {
     background-color: var(--co-cyan-600);
 }
 
-.btn-bkg-purple {
+.btn--bkg-purple {
     background-color: var(--co-purple-600);
 }
 
@@ -129,20 +130,122 @@ p strong {
     color: var(--co-purple-300);
 }
 
-/*======= IMAGES =========*/
+/*Containers, Position and others*/
 
+header {
+    padding-top: 2.875rem; /*46px*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.hero {
+    max-width: 89.9375rem; /*1439px;*/
+    margin: 0 auto 12.375rem auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__content {
+    margin-top: 2.0625rem;
+    padding: 0 2.1875rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;    
+    gap: 1.875rem; /*30px*/
+    text-align: center;    
+}
+
+.hero__content > h1 {
+    max-width: 10ch;  
+}
+
+.hero__content > p {
+    max-width: 35ch;
+}
+
+.hero__content > .break-line {
+    word-wrap: break-word;
+    display: inline-block;    
+}
+
+.hero__content > .no-break-line {
+    white-space: nowrap;
+    display: inline;
+}
+
+.hero picture img {
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.hero__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
 
 
 /* Gerneral */
+/*.wrapper {
+    max-width: 1440px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header {
-    background-color: aquamarine;
+    max-width: 100%;
+    background-color: aqua;
     height: 6.75rem;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin-bottom: 85px;
 }
 
 .hero {
+    max-width: 100%;
+    background-color: blanchedalmond;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;  
+    align-items: center;
+    text-align: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+.hero__content {
+    width: 40ch;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+   
+}
+
+
+.hero__buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+*/
+
+@media (max-width: 1439px){
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-img__right {
+        display: none;
+    }
 }

@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
   <header>
     <img src="./assets/images/logo.svg" alt="">
@@ -18,18 +19,20 @@
   <section class="hero">
     <picture>
       <source srcset="./assets/images/desktop/image-hero-left.png" media="(min-width: 1440px)">
-      <img loading="lazy" src="./assets/images/tablet/image-hero.png" alt="">
+      <img loading="lazy" src="./assets/images/tablet/image-hero.png">
     </picture>
     <div class="hero__content">
-      <h1>Group Chat for Everyone</h1>
+      <h1><span class="break-line">Group Chat</span> <span class="no-break-line">for Everyone</span></h1>
       <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
       <div class="hero__buttons">
-        <button>Download v1.3</button>
-        <button>What is it?</button>
+        <button class="btn btn--big btn--bkg-cyan text-preset-5">Download <span class="btn-txt-cyan">v1.3</span></button>
+        <button class="btn btn--small btn--bkg-purple text-preset-5">What is it?</button>
       </div> <!--button-->
-    </div> <!--hero__content-->
-    <img src="./assets/images/desktop/image-hero-right.png" alt="">
+      </div> <!--hero__content-->
+    <img class="hero-img__right" src="./assets/images/desktop/image-hero-right.png" alt="">
   </section>
+  
+  
 
   <!--
 
