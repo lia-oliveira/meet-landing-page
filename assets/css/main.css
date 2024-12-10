@@ -141,7 +141,7 @@ header {
 
 .hero {
     max-width: 89.9375rem; /*1439px;*/
-    margin: 0 auto 12.375rem auto;
+    margin: 0 auto 138px auto;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -188,7 +188,46 @@ header {
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
 
+.main-number {
+    width: 3.75rem; /*60px*/
+    height: 3.75rem;
+    border: 1px solid var(--co-slate-300);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 62px; /*62px*/
+    color:var(--co-slate-600);
+    background-color: var(--co-white);
+}
+
+.main-number::before {
+    content:"";
+    position: absolute;
+    left:50%;
+    top:-5rem; /*80px*/
+    height: 5rem; /*80px*/
+    border-left: 1px solid var(--co-slate-300);
+}
+
+.main-img__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-img__container img {
+    width: 174.5px;
+    height: 144px;
+    border-radius: 8px;
+}
 /* Gerneral */
 /*.wrapper {
     max-width: 1440px;
