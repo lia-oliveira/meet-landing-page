@@ -88,7 +88,7 @@ p {
 p strong {
     font-family: var(--ff-red-hot-display);
     font-weight: var(--fw-black-900);
-    font-size: var(--fs-12);
+    font-size: var(--fs-16);
     line-height: 1.1;
     color: var(--co-cyan-600);
     text-transform: uppercase;
@@ -178,7 +178,7 @@ header {
 }
 
 .hero {
-    margin: 0 auto;
+    margin: 0 auto 13.4rem auto;
     max-width: 90rem; /*1440px*/
     display: flex;
     flex-direction: row;
@@ -217,16 +217,120 @@ header {
     translate: 50px;
 }
 
+.hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main {
+    max-width: 90rem;
+    margin-bottom: 10.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.number {
+    width: 3.5rem; /*60px*/
+    height: 3.5rem;
+    margin-bottom: 3.175rem; /*50.8px*/
+    border: 1px solid var(--co-slate-300);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+    color:var(--co-slate-600);
+    background-color: var(--co-white);
+}
+
+.number::before {
+    content:"";
+    position: absolute;
+    left:50%;
+    top:-5rem; /*80px*/
+    height: 5rem; /*80px*/
+    border-left: 0.0625rem solid var(--co-slate-300);
+}
+
+.main-img__container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.main-img__container img {
+    width: 16rem; /*256px*/
+    height: 16rem; /*256px*/
+    border-radius: 0.5rem; /*8px*/
+}
+
+main > h2 {
+    max-width: 15ch;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p:nth-of-type(3) {
+    width: 45ch;
+    text-align: center;
+    line-height: 1.5;
+}
 
 
+footer {
+    max-width: 90rem;
+    width: 100%;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    position: relative;
+    padding-top: 1.5rem;
+}
 
+footer .number {
+    position: absolute;
+    top: -25px;
+}
 
+.bkg-image {
+    background-image: url('./../images/desktop/image-footer.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;  
+    isolation: isolate;
+}
 
+.bkg-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--co-cyan-600);
+    opacity: 0.8;
+    z-index: -1;    
+}
 
+footer > h2 {
+    color:var(--co-white);
+    max-width: 15ch;    
+}
 
-
-
-
+footer > p {
+    width: 30ch;
+    color: var(--co-white);    
+}
 
 
 
