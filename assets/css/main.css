@@ -286,7 +286,7 @@ main p:nth-of-type(3) {
 
 
 footer {
-    max-width: 90rem;
+    /*max-width: 90rem;*/
     width: 100%;
     height: 310px;
     display: flex;
@@ -328,7 +328,7 @@ footer > h2 {
 }
 
 footer > p {
-    width: 30ch;
+    max-width: 30ch;
     color: var(--co-white);    
 }
 
@@ -359,6 +359,27 @@ footer > p {
 
     .hero-img__right {
         display: none;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:0.5rem;
+        text-align: center;
+        padding-bottom: 64px;      
+    }
+
+    footer > h2 {
+        margin-top: 45px;
+        margin-bottom: 35px;
+        max-width: 100%;
+    }
+
+    footer p {
+        margin-bottom: 26px;
+        max-width: 25ch;
     }
 
 
