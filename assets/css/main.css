@@ -472,8 +472,25 @@ footer .number {
         flex-wrap: wrap;        
     }
 
+    footer {
+        flex-direction: row;
+
+    }
+
+    footer h2 {
+        max-width: 15ch;
+        text-align: left;
+    }
+    footer p {
+        max-width: 32ch;
+        text-align: left;
+    }
+
     .bkg-image {
         background-image: url('./../images/desktop/image-footer.jpg');
         background-position: top;
     }
+
+    
+    
 }
