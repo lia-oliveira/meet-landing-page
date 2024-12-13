@@ -48,7 +48,7 @@ Mobile version:
 ### Links
 
 - Solution URL: [Solution Repo](https://github.com/lia-oliveira/meet-landing-page)
-- Live Site URL: [Solution Live](https://your-live-site-url.com)
+- Live Site URL: [Solution Live](https://meet-landing-page-rosy.vercel.app/)
 
 ## My process
 
