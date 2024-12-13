@@ -160,6 +160,25 @@ p strong {
     white-space: nowrap;
     display: inline;
 }
+
+.btn--bkg-cyan:hover,
+.btn--bkg-cyan:focus {
+    background-color: var(--co-cyan-300);
+}
+
+.btn--bkg-purple:hover,
+.btn--bkg-purple:focus{
+    background-color: var(--co-purple-300);
+}
+.btn--bkg-cyan:hover .btn-txt-cyan,
+.btn--bkg-cyan:focus .btn-txt-cyan {
+    color: var(--co-cyan-600);
+}
+.btn--bkg-purple:hover .btn-txt-purple,
+.btn--bkg-purple:focus .btn-txt-purple {
+    color: var(--co-purple-600);
+}
+
 /* ======= GENERAL ==========*/
 
 header {
